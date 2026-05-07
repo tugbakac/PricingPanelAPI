@@ -65,5 +65,5 @@ Potansiyel servis ayrımları: / Potential service differences:
 
 ### Important
 
- - Frontend ve Backend bağımsız olarak geliştirilebilir. / Frontend and backend are developed and deployed independently.
+ - Frontend ve Backend bağımsız olarak geliştirilir. / Frontend and backend are developed and deployed independently.
  - REST API aracılığıyla iletişim kurarlar. / They communicate via REST API.
