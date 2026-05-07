@@ -44,3 +44,8 @@ Potansiyel servis ayrımları: / Potential service differences:
 - Product Service
 - Notification Service
 
+### Repositories
+
+- Backend API → https://github.com/tugbakac/PricingPanelAPI
+- Frontend UI → https://github.com/tugbakac/pricing-panel
+
