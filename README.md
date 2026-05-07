@@ -52,13 +52,13 @@ Potansiyel servis ayrımları: / Potential service differences:
 ### Installation
 
 - Projeyi bilgisayarınıza klonlayın / Clone the project to your local machine
--git clone https://github.com/username/TaskFlow.git
--cd TaskFlow
+- git clone https://github.com/username/TaskFlow.git
+- cd TaskFlow
 
--cd backend/TaskFlow.API
--dotnet restore
--dotnet run
+- cd backend/TaskFlow.API
+- dotnet restore
+- dotnet run
 
--frontend projesini run ettiğinizde varsayılan olarak http://localhost:5173 portunu kullanır. / The frontend application uses the following default URL: http://localhost:5173
--Bu portu kullanmıyorsa backend projesinde TaskFlow.API içerisindeki Program.cs de http://localhost:5173 bilgisinin yer aldığı tarafı güncellemeniz gerekir. / If your frontend runs on a different port, you must update the corresponding http://localhost:5173 configuration inside: TaskFlow.API/Program.cs
--Frontend tarafının sağlıklı bir şekilde çalışması için API projesinin ayakta olması gerekmektedir. / For the frontend application to function correctly, the backend API project must be running.
+- frontend projesini run ettiğinizde varsayılan olarak http://localhost:5173 portunu kullanır. / The frontend application uses the following default URL: http://localhost:5173
+- Bu portu kullanmıyorsa backend projesinde TaskFlow.API içerisindeki Program.cs de http://localhost:5173 bilgisinin yer aldığı tarafı güncellemeniz gerekir. / If your frontend runs on a different port, you must update the corresponding http://localhost:5173 configuration inside: TaskFlow.API/Program.cs
+- Frontend tarafının sağlıklı bir şekilde çalışması için API projesinin ayakta olması gerekmektedir. / For the frontend application to function correctly, the backend API project must be running.
