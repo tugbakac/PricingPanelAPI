@@ -36,6 +36,18 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy =>
+        {
+            policy
+                .WithOrigins("http://localhost:5174")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+
 // Clean Architecture DI
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
@@ -52,6 +64,8 @@ app.UseMiddleware<ExceptionMiddleware>();
 // 2. HTTPS REDIRECTION
 app.UseHttpsRedirection();
 
+
+app.UseCors("AllowFrontend");
 // 3. SWAGGER (SADECE DEV)
 if (app.Environment.IsDevelopment())
 {
